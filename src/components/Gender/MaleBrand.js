@@ -40,7 +40,7 @@ function MaleBrandPage() {
 
 
   useEffect(() => {
-    fetch(`http://itssaj.pythonanywhere.com/api/products/?gender=${gender}&brand=${brand}`)
+    fetch(`https://itssaj.pythonanywhere.com/api/products/?gender=${gender}&brand=${brand}`)
           .then((response) => {
         if (!response.ok) {
           throw new Error('Network not ok');
@@ -50,7 +50,7 @@ function MaleBrandPage() {
       .then((data) => {
         setFemaleProducts(data);
         setFilteredProducts(data); 
-        console.log('API URL:', `http://itssaj.pythonanywhere.com/api/products/?gender=${gender}&brand=${brand}`);
+        console.log('API URL:', `https://itssaj.pythonanywhere.com/api/products/?gender=${gender}&brand=${brand}`);
 
         console.log(data);
       })
@@ -116,7 +116,7 @@ style={{ paddingLeft: '', paddingRight: '0px',padding:''  }}
   <Card style={{ width: '268px', marginBottom: '5px',border: '0.1px solid white ' }}>
     <Card.Img
       variant="top"
-      src={`http://itssaj.pythonanywhere.com/${product.image}`}
+      src={`https://itssaj.pythonanywhere.com/${product.image}`}
       style={{ width: '267px', height: '300px',padding: ''}}
 
       onClick={() => handleCardClick(product)}

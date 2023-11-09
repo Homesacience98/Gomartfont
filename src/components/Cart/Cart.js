@@ -21,7 +21,7 @@ function Cart({ item }) {
 
 const csrfToken = getCookie('csrftoken');
 const handleDeleteItem = (cartItemId) => {
-  fetch(`http://itssaj.pythonanywhere.com/api/cart/delete/${cartItemId}/`, {
+  fetch(`https://itssaj.pythonanywhere.com/api/cart/delete/${cartItemId}/`, {
       method: 'DELETE',
       // Add headers and other necessary options here.
   })
@@ -40,7 +40,7 @@ const handleDeleteItem = (cartItemId) => {
 };
 
   useEffect(() => {
-    fetch('http://itssaj.pythonanywhere.com/api/cart/')
+    fetch('https://itssaj.pythonanywhere.com/api/cart/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Response not ok');
@@ -71,7 +71,7 @@ const handleDeleteItem = (cartItemId) => {
     const token = localStorage.getItem('authToken');
 
     // Send a POST request to the Django API for checkout
-    fetch('http://itssaj.pythonanywhere.com/api/Checkout/', {
+    fetch('https://itssaj.pythonanywhere.com/api/Checkout/', {
 
       method: 'POST',
       headers: {
@@ -119,7 +119,7 @@ const handleDeleteItem = (cartItemId) => {
     .map((productItem) => (    <tr key={productItem.id}>
       <td style={{width:"250px"}}>
         <img
-          src={`http://itssaj.pythonanywhere.com/${productItem.image}`}
+          src={`https://itssaj.pythonanywhere.com/${productItem.image}`}
           alt={productItem.product}
           style={{ width: '150px', height: '150px' }}
         />

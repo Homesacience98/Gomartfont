@@ -40,7 +40,7 @@ function  WatchDetail({ watchItem }) {
         <img
           className="d-block w-100"
 
-          src={`http://itssaj.pythonanywhere.com/${watchItem.image}`}          alt="First slide"
+          src={`https://itssaj.pythonanywhere.com/${watchItem.image}`}          alt="First slide"
         />
         <Carousel.Caption>
           <h5>{watchItem.name}</h5>
@@ -51,7 +51,7 @@ function  WatchDetail({ watchItem }) {
         <img
           className="d-block w-100"
 
-          src={`http://itssaj.pythonanywhere.com/${watchItem.img1}`}          alt="Second slide"
+          src={`https://itssaj.pythonanywhere.com/${watchItem.img1}`}          alt="Second slide"
         />
         <Carousel.Caption>
           <h5>{watchItem.name}</h5>
@@ -62,7 +62,7 @@ function  WatchDetail({ watchItem }) {
         <img
           className="d-block w-100"
 
-          src={`http://itssaj.pythonanywhere.com/${watchItem.img2}`}          alt="Third slide"
+          src={`https://itssaj.pythonanywhere.com/${watchItem.img2}`}          alt="Third slide"
         />
         <Carousel.Caption>
           <h5>{watchItem.name}</h5>
@@ -95,9 +95,9 @@ function  WatchDetail({ watchItem }) {
 </div><br/>
 <div className='container'>
   <Row className="justify-content-md-left">
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${watchItem.image}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${watchItem.img1}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${watchItem.img2}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${watchItem.image}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${watchItem.img1}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${watchItem.img2}`} alt="Image 1"/></Col>
   </Row>
   <br/>
   <hr/>

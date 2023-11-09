@@ -43,7 +43,7 @@ function QuickConverse({ item }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('network not ok');
@@ -71,7 +71,7 @@ function QuickConverse({ item }) {
       <Card style={{ width: '268px', marginBottom: '5px', border: '0.1px solid white'  }}>
         <Card.Img
           variant="top"
-          src={`http://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
           style={{ width: '267px', height: '300px',padding: ''}}
           onClick={() => handleCardClick(maleclothesItem)}
         />

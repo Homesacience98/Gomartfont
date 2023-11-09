@@ -23,7 +23,7 @@ function Navbar3({ cartLength }) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     // Fetch the list of customers from your Django backend
-    fetch('http://itssaj.pythonanywhere.com/api/customer-list/') // Replace with your API endpoint
+    fetch('https://itssaj.pythonanywhere.com/api/customer-list/') // Replace with your API endpoint
       .then((response) => response.json())
       .then((data) => {
         setCustomers(data);
@@ -144,7 +144,7 @@ function Navbar3({ cartLength }) {
 <Navbar.Brand href="/profile-view">
   {lastCustomer && (
     <img
-      src={`http://itssaj.pythonanywhere.com${lastCustomer.customerimage}`}
+      src={`https://itssaj.pythonanywhere.com${lastCustomer.customerimage}`}
       alt="Profile"
       style={{
         width:"40px",

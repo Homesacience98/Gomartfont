@@ -94,9 +94,9 @@ function  ChildrenDetail({ childrenItem }) {
 </div><br/>
 <div className='container'>
   <Row className="justify-content-md-left">
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${childrenItem.image}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${childrenItem.img1}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${childrenItem.img2}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${childrenItem.image}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${childrenItem.img1}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${childrenItem.img2}`} alt="Image 1"/></Col>
   </Row>
   <br/>
   <hr/>

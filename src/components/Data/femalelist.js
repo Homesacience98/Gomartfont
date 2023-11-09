@@ -74,7 +74,7 @@ function Femalelist({ item }) {
 
   useEffect(() => {
   
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error(' response not ok');
@@ -101,7 +101,7 @@ function Femalelist({ item }) {
       <Card style={{ width: '268px', marginBottom: '', border: '0.1px solid white'  }}>
         <Card.Img
           variant="top"
-          src={`http://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
           style={{ width: '267px', height: '300px',padding: ''}}
 
           onClick={() => handleCardClick(maleclothesItem)}

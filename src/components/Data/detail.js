@@ -52,7 +52,7 @@ const [addedToCart, setAddedToCart] = useState(false);
 
 
 const addToCart12 = async (clothingItem,item) => {
-  const url = 'http://itssaj.pythonanywhere.com/api/add-to-cart/';
+  const url = 'https://itssaj.pythonanywhere.com/api/add-to-cart/';
   const token = localStorage.getItem('authToken');
   const user1 = localStorage.getItem('loggedInUsername');
 
@@ -165,7 +165,7 @@ ratingValue:ratingValue,
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${clothingItem.image}`}
+          src={`https://itssaj.pythonanywhere.com/${clothingItem.image}`}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -175,7 +175,7 @@ ratingValue:ratingValue,
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${clothingItem.img1}`}
+          src={`https://itssaj.pythonanywhere.com/${clothingItem.img1}`}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -185,7 +185,7 @@ ratingValue:ratingValue,
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${clothingItem.img2}`}
+          src={`https://itssaj.pythonanywhere.com/${clothingItem.img2}`}
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -286,9 +286,9 @@ ratingValue:ratingValue,
 </div><br/>
 <div className='container'>
   <Row className="justify-content-md-left">
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${clothingItem.image}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${clothingItem.img1}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${clothingItem.img2}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${clothingItem.image}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${clothingItem.img1}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${clothingItem.img2}`} alt="Image 1"/></Col>
   </Row>
   <br/>
   <hr/>

@@ -50,7 +50,7 @@ function ProfileForm() {
     formData.append('city', customerData.city);
     formData.append('customerimage', customerData.customerimage);
 
-    const response = await fetch('http://itssaj.pythonanywhere.com/api/add-customer/', {
+    const response = await fetch('https://itssaj.pythonanywhere.com/api/add-customer/', {
       method: 'POST',
       body: formData,
     });

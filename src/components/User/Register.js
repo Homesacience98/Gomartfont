@@ -38,7 +38,7 @@ function Register() {
       return;
     }
     try {
-      const response = await fetch('http://itssaj.pythonanywhere.com/api/register/', {
+      const response = await fetch('https://itssaj.pythonanywhere.com/api/register/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

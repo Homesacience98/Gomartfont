@@ -23,7 +23,7 @@ function Twomaleview() {
   const [products, setProducts] = useState([]); 
 
   useEffect(() => {
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network  not ok');
@@ -50,7 +50,7 @@ function Twomaleview() {
         <Card style={{ width: '', marginBottom: '5px',border: '0.1px solid white ' }}>
           <Card.Img
             variant="top"
-            src={`http://itssaj.pythonanywhere.com/${maleclothesItem.img1}`}
+            src={`https://itssaj.pythonanywhere.com/${maleclothesItem.img1}`}
             style={{ width: '', height: '',padding: ''}}
   
             onClick={() => handleCardClick(maleclothesItem)}

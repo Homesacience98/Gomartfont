@@ -41,7 +41,7 @@ function  Search2Detail({ maleclothes }) {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${maleclothes.image}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothes.image}`}
 
           alt="First slide"
         />
@@ -54,7 +54,7 @@ function  Search2Detail({ maleclothes }) {
         <img
           className="d-block w-100"
          
-          src={`http://itssaj.pythonanywhere.com/${maleclothes.img1}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothes.img1}`}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -65,7 +65,7 @@ function  Search2Detail({ maleclothes }) {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${maleclothes.img1}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothes.img1}`}
           alt="Third slide"
         />
         <Carousel.Caption>

@@ -70,7 +70,7 @@ function Black() {
   };  const [products, setProducts] = useState([]); 
 
   useEffect(() => {
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('response not ok');
@@ -98,7 +98,7 @@ function Black() {
         <Card style={{ width: '268px', marginBottom: '8px',border: '0.8px solid black ',backgroundColor:'black' ,color:'white'}}>
           <Card.Img
             variant="top"
-            src={`http://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
+            src={`https://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
             style={{ width: '267px', height: '330px',padding: ''}}
             onClick={() => handleCardClick(maleclothesItem)}
           />

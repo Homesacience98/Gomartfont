@@ -21,7 +21,7 @@ const Search2 = () => {
       
   useEffect(() => {
 
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('response not okay');
@@ -94,7 +94,7 @@ const Search2 = () => {
                   <Card.Img
                     style={{height: '140px'}}
                     variant="top"
-                    src={`http://itssaj.pythonanywhere.com/${product.image}`}
+                    src={`https://itssaj.pythonanywhere.com/${product.image}`}
                     alt={product.name}
                     onClick={() => handleCardClick(product)}
                   />

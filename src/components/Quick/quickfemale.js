@@ -41,7 +41,7 @@ function Quickfemale({ item }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('network not ok');
@@ -91,7 +91,7 @@ function Quickfemale({ item }) {
         >
           <Card.Img
             variant="top"
-            src={`http://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
+            src={`https://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
             style={{ width: '267px', height: '300px', padding: '0' }}
             onClick={() => handleCardClick(maleclothesItem)}
           />

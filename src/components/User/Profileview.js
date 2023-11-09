@@ -16,7 +16,7 @@ function ViewProfile() {
 
   useEffect(() => {
     // Fetch the list of customers from your Django backend
-    fetch('http://itssaj.pythonanywhere.com/api/customer-list/') // Replace with your API endpoint
+    fetch('https://itssaj.pythonanywhere.com/api/customer-list/') // Replace with your API endpoint
       .then((response) => response.json())
       .then((data) => {
         setCustomers(data);
@@ -58,7 +58,7 @@ function ViewProfile() {
                   <h4       style={{float:'right'}}
  ><b> <i class='fab fa-expeditedssl'></i> </b></h4>
             <img
-              src={`http://itssaj.pythonanywhere.com${lastCustomer.customerimage}`}
+              src={`https://itssaj.pythonanywhere.com${lastCustomer.customerimage}`}
               alt="Profile"
               style={{ maxWidth: '200px', border: 'white 3px solid', borderRadius: '10px',marginLeft:'15px',marginTop:'-10px' }}
             />

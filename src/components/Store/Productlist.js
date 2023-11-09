@@ -8,7 +8,7 @@ function ProductList() {
 
     useEffect(() => {
         // Make a GET request using the fetch API
-        fetch('http://itssaj.pythonanywhere.com/api/products/') // Adjust the URL as needed
+        fetch('https://itssaj.pythonanywhere.com/api/products/') // Adjust the URL as needed
             .then(response => {
                 if (!response.ok) {
                     throw new Error('network error');
@@ -35,7 +35,7 @@ function ProductList() {
                     <li key={product.id}>
                         <h3>{product.name}</h3>
                         <p>{product.description}</p>
-                        <img style={{width:'200px',height:'200px'}} src={`http://itssaj.pythonanywhere.com/${product.image}`}  />
+                        <img style={{width:'200px',height:'200px'}} src={`https://itssaj.pythonanywhere.com/${product.image}`}  />
                     </li>
                 ))}
             </ul>

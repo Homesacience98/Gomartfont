@@ -41,7 +41,7 @@ function  MaleDetail({ maleclothes }) {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${maleclothes.image}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothes.image}`}
 
           alt="First slide"
         />
@@ -52,7 +52,7 @@ function  MaleDetail({ maleclothes }) {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${maleclothes.img1}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothes.img1}`}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -62,7 +62,7 @@ function  MaleDetail({ maleclothes }) {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={`http://itssaj.pythonanywhere.com/${maleclothes.img2}`}
+          src={`https://itssaj.pythonanywhere.com/${maleclothes.img2}`}
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -97,9 +97,9 @@ function  MaleDetail({ maleclothes }) {
 </div><br/>
 <div className='container'>
   <Row className="justify-content-md-left">
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${maleclothes.image}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${maleclothes.img1}`} alt="Image 1"/></Col>
-    <Col xs={4} lg={2}><Image className="img-fluid" src={`http://itssaj.pythonanywhere.com/${maleclothes.img2}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${maleclothes.image}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${maleclothes.img1}`} alt="Image 1"/></Col>
+    <Col xs={4} lg={2}><Image className="img-fluid" src={`https://itssaj.pythonanywhere.com/${maleclothes.img2}`} alt="Image 1"/></Col>
   </Row>
   <br/>
   <hr/>

@@ -23,7 +23,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://itssaj.pythonanywhere.com/api/login/', {
+      const response = await fetch('https://itssaj.pythonanywhere.com/api/login/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

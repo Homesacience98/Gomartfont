@@ -96,7 +96,7 @@ function Quickmale({ item }) {
         >
           <Card.Img
             variant="top"
-            src={`http://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
+            src={`https://itssaj.pythonanywhere.com/${maleclothesItem.image}`}
             style={{ width: '267px', height: '300px', padding: '0' }}
             onClick={() => handleCardClick(maleclothesItem)}
           />

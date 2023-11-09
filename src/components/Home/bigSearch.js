@@ -19,7 +19,7 @@ const BigSearch = () => {
       };
     
   useEffect(() => {
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('network response error');
@@ -81,7 +81,7 @@ const BigSearch = () => {
                   <Card.Img
                     variant="top" 
                     style={{height: '100px',border:' white 3px solid',borderRadius: '50px',}}
-                    src={`http://itssaj.pythonanywhere.com/${product.image}`}
+                    src={`https://itssaj.pythonanywhere.com/${product.image}`}
                     alt={product.name}
                     onClick={() => handleCardClick(product)}
                   />

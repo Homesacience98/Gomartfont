@@ -29,7 +29,7 @@ function UserInfo() {
     const decodedToken = jwt_decode(token);
 
     // Send a POST request to the Django API endpoint
-    fetch('http://itssaj.pythonanywhere.com/api/post_message/', {
+    fetch('https://itssaj.pythonanywhere.com/api/post_message/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

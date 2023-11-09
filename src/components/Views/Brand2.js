@@ -24,7 +24,7 @@ function Brands2() {
   const [products, setProducts] = useState([]); 
 
   useEffect(() => {
-    fetch('http://itssaj.pythonanywhere.com/api/products/')
+    fetch('https://itssaj.pythonanywhere.com/api/products/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('network error');
@@ -49,7 +49,7 @@ function Brands2() {
         lg={3}
       >
         <Card style={{ width: '', marginBottom: '5px',border: '0.1px solid white ' }}>
-        <img class="card-img-top" src={`http://itssaj.pythonanywhere.com/${maleclothesItem.image}`} alt="Card image"
+        <img class="card-img-top" src={`https://itssaj.pythonanywhere.com/${maleclothesItem.image}`} alt="Card image"
                     onClick={() => handleCardClick(maleclothesItem)} />
  <div class="card-img-overlay">
  <h6 class="card-title">Northface</h6>
